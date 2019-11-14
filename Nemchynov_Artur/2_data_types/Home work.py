@@ -16,5 +16,5 @@ Year -= 30
 
 Odometer -= 6000
 
-print("car_name" + str(Brand) + str(Model) + str(Color) + str(Year) + str(Engine_volume) + str(Odometer) + str(Phone_number))
+print = ("car_name", type(Year))
 
