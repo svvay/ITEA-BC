@@ -1,6 +1,0 @@
-.idea/
-.pytest_cache
-env/
-venv/
-*.pyc
-*.DS_Store
