@@ -23,6 +23,7 @@ car_prise = car_prise * 10 / 100
 Year -= 10
 # Decreasing odometer of the car
 Odometer -= 30000
+
 # Output creating car with new properties
 print("Your car " + car_name + " has next properties: \n" +
       "    Brand - " + str(Brand) + "\n" +
