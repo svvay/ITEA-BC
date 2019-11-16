@@ -1,0 +1,11 @@
+# age = 21
+# my_name = "Kei"
+# Year = 2019
+# number = 68
+# body_temperature = 36.6
+# my_friends = ["Jihye", "Hime"]
+# print("age:", age)
+
+your_name = input("type you name: ")
+
+pass
