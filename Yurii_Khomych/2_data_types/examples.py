@@ -31,9 +31,21 @@
 # c = a + b
 # a = a * 2
 # a *= 2
-your_name = input("Type your name: ")
+your_first_name = input("Type your first name: ")
+your_second_name = input("Type your second name: ")
 your_age = input("Type your age: ")
 # output = "{} -- {}".format(your_name, your_age)
-output = f"{your_name} -- {your_age}"
-print(output)
+# output = f"{your_name} -- {your_age}"
+# print(output)
+message = f"Hi, {your_first_name}, your {your_second_name} and you are {your_age} old"
+# Use format instead f-string
+# second_message = "Hi, {}, your {} and you are {} old".format(your_first_name, your_second_name, your_age)
+print(message)
+
+# print("%s" % your_name)
 pass
+"""This
+is 
+multiline 
+comment
+"""
