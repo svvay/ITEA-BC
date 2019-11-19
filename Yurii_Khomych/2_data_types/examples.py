@@ -1,45 +1,39 @@
-
-my_max = "Max"
-my_new_max = "Max"
-
-# students = ["Max", "Oleg"]
-students = ["Max"]
-lost_students = ["Yurii"]
-
-if students:
-    print("Students is here!")
-    # if "Oleg" in students and "Max" in students: print("Oleg is here!"); print("Max is here!"); print("Max is here!")
-    # if "Oleg" in students:
-    #     oleg = True
-    # else:
-    #     oleg = False
-    # oleg = True if "Oleg" in students else False
-    # if "Oleg" not in students:
-    #     raise Exception
-    # assert "Oleg" in students, "Oleg not in students"
-    # all_fine = False
-#     if True:
-#         print("something happen")
-#         raise AssertionError
-# else:
-#     if lost_students:
-#         print(f"{lost_students}")
+# age = 21
+# my_name = "Yurii"
+# year = 2019
+# number = 229
+# body_temperature = 36.6
+# my_friends = ["John", "Jack"]
+# print("age:", age)
+# print("My name:", my_name)
+# print("Year:", year)
+# print("Number==>", number)
+# print("body_temperature:", body_temperature)
+# print("my_friends:", my_friends)
 #
-# assert all_fine is True, "All fine is not True"
-# print(f"Final program, students not found) {students}")
+# bool_type_variable = True
+# bool_type_variable_false = False
+#
+# int_type_varible = 100
+# year = 2019
+# body_temperature = 36.6
+# name = "yur'ii"
+# # name = 'yur'ii'
+#
+# my_friends = ["John", "Jack"]
+# my_friends_tuple = ("John", "Jack")
+# my_friends_set = set(["John", "Jack", "John"])
+# my_friends_pets = {"John": "Murzik", "Jack": "Bobik", "Petya": ["Sharik", "Barbos"], "John": "Pesyk"}
+#
+# a = 2.0
+# b = 4
 
-
-a = 1
-b = '2'
-c = 3
-try:
-    result = a + b
-except Exception as error:
-    print("Something broken: \n", error)
-    result = 0
-else:
-    result += c
-finally:
-    print(result)
-
-print(f"Result {result}")
+# c = a + b
+# a = a * 2
+# a *= 2
+your_name = input("Type your name: ")
+your_age = input("Type your age: ")
+# output = "{} -- {}".format(your_name, your_age)
+output = f"{your_name} -- {your_age}"
+print(output)
+pass
