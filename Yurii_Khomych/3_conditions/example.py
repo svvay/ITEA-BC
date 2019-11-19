@@ -57,39 +57,75 @@
 # if "Alex" not in my_friends and today is not None:
 #     print("We need to add Alex to my_friends")
 #     my_friends.append("Alex")
+#
+# today = "Sunday"
+#
+# my_visits = []
+# my_friends = ["John", "Jack"]
+# if today == "Sunday":
+#     if "Alise" not in my_friends:
+#         my_visits.append("Alise")
+#         my_friends.append("Alise")
+#     elif "Kate" not in my_friends:
+#         my_visits.append("Kate")
+#         my_friends.append("Kate")
+#     else:
+#         my_visits.append("Bar")
+# elif today == "Saturday":
+#     if "Kate" not in my_friends:
+#         my_visits.append("Kate")
+#         my_friends.append("Kate")
+#     if "Alise" not in my_friends:
+#         my_visits.append("Alise")
+#         my_friends.append("Alise")
+#     else:
+#         my_visits.append("Disco")
+# else:
+#     my_visits.append("Work")
+#     my_friends = []
+#
+# today = "Monday" if "Alise" not in my_friends else "Tuesday" if "Kate" not in my_friends else "Friday"
+# today = None
+# if "Alise" not in my_friends:
+#     today = "Monday"
+# elif "Kate" not in my_friends:
+#     today = "Tuesday"
+# else:
+#     today = "Friday"
+import string
 
-today = "Sunday"
+# user_input = input("Please write number: ")
+# assert user_input not in string.ascii_letters, "ERROR, please type your card number instead letters"
+# if user_input in string.ascii_letters:
+    # raise Exception("ERROR, please type your card number instead letters")
+# try:
+#     user_input = input("Please write number: ")
+#     user_input = int(user_input)
+# except ValueError as error:
+#     user_input = input("PLEASE WRITE NUMBER: ")
+#     try:
+#         user_input = int(user_input)
+#     except Exception as e:
+#         print("YOU ARE SO STUPID USER!!!")
+#         user_input = 99
+#     except TypeError as e:
+#         print(type(user_input))
+#     except ValueError as error:
+#         print(e)
+#         # raise ValueError
 
-my_visits = []
-my_friends = ["John", "Jack"]
-if today == "Sunday":
-    if "Alise" not in my_friends:
-        my_visits.append("Alise")
-        my_friends.append("Alise")
-    elif "Kate" not in my_friends:
-        my_visits.append("Kate")
-        my_friends.append("Kate")
-    else:
-        my_visits.append("Bar")
-elif today == "Saturday":
-    if "Kate" not in my_friends:
-        my_visits.append("Kate")
-        my_friends.append("Kate")
-    if "Alise" not in my_friends:
-        my_visits.append("Alise")
-        my_friends.append("Alise")
-    else:
-        my_visits.append("Disco")
+user_input = input("Please write number: ")
+try:
+    user_input = int(user_input)
+    user_input = user_input / 0
+except ValueError as e:
+    print(e)
+except ZeroDivisionError as e:
+    print(e)
+except Exception as e:
+    print("Other exception")
 else:
-    my_visits.append("Work")
-    my_friends = []
-
-today = "Monday" if "Alise" not in my_friends else "Tuesday" if "Kate" not in my_friends else "Friday"
-today = None
-if "Alise" not in my_friends:
-    today = "Monday"
-elif "Kate" not in my_friends:
-    today = "Tuesday"
-else:
-    today = "Friday"
+    print("In Else case")
+finally:
+    print(user_input)
 pass

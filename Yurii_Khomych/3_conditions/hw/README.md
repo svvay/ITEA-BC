@@ -25,6 +25,7 @@
 2. 
     * Input: credit card number (fake data), cvv, mm/yy
     * Check that credit card number length has 16 symbols in other case call exit()
-    * Try to make credit card number to int() if error output "OK", in other case call exit()
+    * Try to change credit card number type to int() if you get error print error message for user and call exit(),
+     in other case output "OK"
     * Check length of cvv if less than 3 symbols, print error and call exit()
     * If all checks passed print "Everything fine"
