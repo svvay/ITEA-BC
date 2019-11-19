@@ -1,12 +1,12 @@
 
 price = 0
 
-b = str(input('Enter Brand: '))
-m = str(input('Enter model: '))
-c = str(input('Enter color: '))
+b = input('Enter Brand: ')
+m = input('Enter model: ')
+c = input('Enter color: ')
 y = int(input('Enter year: '))
 ev = int(input('Enter engine: '))
-o = int(input('Odometer: '))
+o = int(input('Odometer: '))**8
 pn = int(input('Enter Phone: '))
 
 newprice = int(((price + 10*7) * 10) / 100)
