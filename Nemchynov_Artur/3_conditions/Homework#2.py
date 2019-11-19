@@ -57,12 +57,12 @@ try:
     CreditCard_Number = int(CreditCard_Number)
     print("OK")
 except Exception as e:
-    print("Error - wrong type!")
+    print("Error")
     exit()
 CreditCard_CVV = input("Please input your CVV code: ")
 
 if len(CreditCard_CVV) < 3:
-    print("Error")
+    print("Error!!!")
     exit()
 else:
     print("OK")
