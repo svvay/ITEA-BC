@@ -7,4 +7,3 @@ while True:
         break
 for l in lines:
     print(l)
-pass

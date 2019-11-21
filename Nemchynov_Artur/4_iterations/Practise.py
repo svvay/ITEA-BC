@@ -5,4 +5,4 @@ for item in my_list:
     elif item == 3:
         continue
     print(item, type(item))
-pass
+
