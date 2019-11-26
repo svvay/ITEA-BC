@@ -7,38 +7,33 @@ my_list = []
 TEMP = 0
 
 # Making cicle for inputing dict and
-while TEMP == 0:
-    my_list = (input("please input numbers :")).split(" ")
-    print(my_list)
-    i = 1
-    while i < len(my_list):
-        try:
-            my_list[i] != None
-            my_list[i] = int(my_list[i])
-
-            TEMP = 1
-        except Exception as e:
-            print("You make mistake! Please input just numbers!!!")
-        break
+my_list = (input("please input numbers :")).split(" ")
+print(my_list)
 
 
-'''def sum(n_value, a=0):
+for i in my_list:
+    try:
+        my_list[i]!=None
+        my_list[i] = int(my_list[i])
 
+
+    except Exception as e:
+        print("You make mistake! Please input just numbers!!!")
+    break
+
+
+
+def my_sum(n_value, temp=0):
     for i in n_value:
-        a += int(i)
-    print(a)'''
-
-def sum(n_value, temp=0):
-    for i in range(len(my_list)):
-        temp += int(my_list[i])
+        temp += int(i)
     return print(temp)
 
 
 def multiply(n_value, temp=1):
-    for i in range(len(my_list)):
-        temp *= int(my_list[i])
+    for i in n_value:
+        temp *= int(i)
     return print(temp)
 
 
-sum(my_list)
+my_sum(my_list)
 multiply(my_list)

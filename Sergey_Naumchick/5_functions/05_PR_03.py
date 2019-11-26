@@ -8,13 +8,14 @@ while len(my_input) != 1:
     my_input = input("please input only one symbol: ")
 
 
-# my_string = "a"
 
-def my_func():
-    if my_input.lower() in VOLVED:
-        return print(True)
+def my_func(func):
+    if func in VOLVED:
+        return True
     else:
-        return print(False)
+        return False
 
 
-my_func()
+if (my_func(my_input))==True:
+    print("True")
+else: print("False")

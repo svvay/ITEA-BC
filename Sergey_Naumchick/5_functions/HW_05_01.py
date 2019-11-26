@@ -5,32 +5,19 @@ or suppose we cannot tell in advance how many they are?
 Write a function max_in_list()
 that takes a list of numbers and returns the largest one.'''
 
-list1 = [1, 3, 7, 2, 4, 6]
+list1 = [1, 3, 7, 2, 4, 6,8]
 print(list1)
 
 
 def max_in_list(list):
     temp = None
-    for i in range(len(list)):
+    for i in list:
         if temp == None:
-            temp = list[i]
+            temp = i
         else:
-            if temp < list[i]:
-                temp = list[i]
+            if temp < i:
+                temp = i
     print(temp)
 
 
 max_in_list(list1)
-
-
-# Подучить потом
-
-def nex(x):
-    return x ** 2
-
-b = list(map(nex, list1))
-print(b)
-
-listt = ["sadasd", "sadad", "sa"]
-c = list(map(len, listt))
-print(c)

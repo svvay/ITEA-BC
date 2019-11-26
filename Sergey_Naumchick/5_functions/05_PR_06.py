@@ -1,16 +1,15 @@
-list = ["joho", "Anny", "Kate"]
+list = ["joho", "Andny", "Kate"]
 list2 = ["john", "Anny", "Kaate"]
 
-a = 0
 
 
 def overlapping(a, x):
     das = 0
-    for i in range(len(list)):
+    for i in a:
 
-        for j in range(len(list2)):
+        for j in x:
 
-            if list2[j] == list[i]:
+            if j == i:
                 das += 1
     if das != 0:
         return True

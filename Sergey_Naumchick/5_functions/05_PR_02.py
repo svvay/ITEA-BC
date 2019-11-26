@@ -24,18 +24,18 @@ if question_1 == 'n':
 
 
 def string_len(a, temp=0):
-    for i in range(len(string_input)):
+    for i in a:
         temp += 1
-    return temp
+    return print(temp)
 
 
 if question_1 == "y":
     string_input = input("input String: ")
-    print(string_len(string_input))
+    string_len(string_input)
 
 
 def list_len(a, temp=0):
-    for i in range(len(list_input)):
+    for i in a:
         temp += 1
     return print(temp)
 

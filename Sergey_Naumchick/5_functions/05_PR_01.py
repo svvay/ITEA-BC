@@ -5,21 +5,21 @@
 TEMP = 0
 
 
-def max(a, b):
+def my_max(a, b):
     if a <= b:
-        return b
-    if b < a:
-        return a
+        return print(b)
+    else:
+        return print(a)
 
 
-while TEMP == 0:
+while True:
     try:
         a, b = input("please input two numbers: (like 12/13)\n").split("/")
 
         a = int(a)
         b = int(b)
-        print(max(a, b))
-        TEMP = 1
+        my_max(a, b)
+        break
 
     except ValueError as e:
         print('You entered not numerical type, numbers without "/" try again')
