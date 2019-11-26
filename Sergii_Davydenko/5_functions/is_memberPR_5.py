@@ -9,10 +9,11 @@
 
 numbs = input('Enter something number: ')
 lists = input("Enter lists of values: ").split()
+def counts(numbs, lists):
+    count = lists.count(numbs)
+    if count >= 1:
+        print('Yep u right: ', count)
+    else:
+        print(f'Sorry, but count is {count}:')
 
-count = lists.count(numbs)
-
-if count >= 1:
-    print('Yep u right: ', count)
-else:
-    print(f'Sorry, but count is {count}:')
+counts(numbs, lists)

@@ -11,7 +11,7 @@
 
 numbers = []
 while True:
-    number = input('Enter something number: ')
+    number = int(input('Enter something number: '))
     if number:
         numbers.append(number)
     else:
