@@ -30,3 +30,6 @@
 
 # from my_module import *
 # pass
+
+import my_module
+pass
