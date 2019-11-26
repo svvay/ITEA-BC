@@ -6,18 +6,18 @@
 
 # Its work
 
-# first = input("Enter first lists: ").split()
-# second = input("Enter second lists: ").split()
+first = input("Enter first lists: ").split()
+second = input("Enter second lists: ").split()
 
 
-# def overlapping(first, second):
-#     for f in first:
-#         for s in second:
-#             if f == s:
-#                 return True
-#     return False
-#
-# print(overlapping(first, second))
+def overlapping(first, second):
+    for f in first:
+        for s in second:
+            if f == s:
+                return True
+    return False
+
+print(overlapping(first, second))
 
 
 # Work for SET
