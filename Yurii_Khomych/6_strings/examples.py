@@ -4,7 +4,7 @@
 
 # d = a + b
 
-foo = "foo"
+# foo = "foo"
 # bar = "bar"
 # baz = "baz"
 #
@@ -12,8 +12,8 @@ foo = "foo"
 # print(c)
 # c = foo + bar + 1
 
-res = foo * 5
-print(res)
+# res = foo * 5
+# print(res)
 
 # foo_in_res = foo in res
 # print(foo_in_res)
@@ -47,7 +47,19 @@ print(res)
 # print(s[::2])
 
 # s = "0123456789"
-# print(s[0:6:2])
+# print(s[0:6:-2])
+name = "Jonny"
+my_surname="Depp"
+age=21
+"Hello, {}.".format(name)
+"Hello, {age}  {my_surname} {my_name}.".format(my_name=name, my_surname=my_surname, age=age)
+"Hello, {2}  {1} {0}.".format(name, "Depp", 21)
+"Hello, {}  {} {}.".format(name, "Depp", 21)
+f"Hello, {name}."
+welcome = f"Hello, {age}  {my_surname} {name}."
+"Hello," + str(age) + " " + my_surname + " " + name + "."
+",".join([name, str(age)])
+print(f"HELLO {welcome.upper()}")
 # print(s[1:9:2])
 # print(s[::3])
 # print(s[::-1])
