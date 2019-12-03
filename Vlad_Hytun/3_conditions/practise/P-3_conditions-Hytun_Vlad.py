@@ -7,10 +7,10 @@
 #     * Phone number
 
 my_operator = ''
-phone_operators = {'Kyivstar': '097',
-                   'Life': '093'}
-email_provider = {'Google': 'gmail.com',
-                  'Apple': 'icloud.com'}
+phone_operators = {'097': 'Kyivstar',
+                   '093': 'Life'}
+email_provider = {'gmail.com': 'Google',
+                  'icloud.com': 'Apple'}
 my_first_name = input('Enter your first name: ')
 my_last_name = input('Enter your last name: ')
 my_email_provider = input('Enter your email_provider name: ')
@@ -19,12 +19,10 @@ my_phone = input('Enter your phone name: ')
 
 # 2. If phone number starts from (097, 067) output "Your phone number belongs to
 # {}" and create variable operator with value.
-for i,j in phone_operators.items():
-    if my_phone[0:3] in j:
-        my_operator = i
-        print(f'Your phone number belongs to {i}')
-    else:
-        my_operator = 'Unknown'
+
+oper:  str = my_phone[0:3]
+if oper in phone_operators.keys():
+    operators = phone_operators[oper]
 
 # 4. Check that First Name consist of letters (string.ascii_letters)
 # else set "No name"
@@ -47,14 +45,10 @@ else:
     majority = 'adult'
 # 6. If email endswith gmail.com, icloud.com…make output ”Your email provider is {}”
 
-for k,l in email_provider.items():
-    if l in email_provider.values():
-        my_email_provider = k
-        print(f'Your email provider is {k}')
-    else:
-        my_email_provider = 'Unknown'
+if my_email_provider in email_provider.keys():
+    my_email_prov = email_provider[my_email_provider]
 
 # Use output for print: First Name, Majority
 # 7. Output result of each variable
-print(f'You are {my_first_name},{majority} and has old {my_age}. You have Phone operators as {my_operator} and Email '
-      f'operator {my_email_provider}.')
+print(f'You are {my_first_name},{majority} and has old {my_age}. You have Phone operators as {operators} and Email '
+      f'operator {my_email_prov}.')
