@@ -8,15 +8,23 @@ For example, if "stressed" and "desserts" is part of the word list, the
 the output should include the pair "stressed desserts". Note, by the way,
 that each pair by itself forms a palindrome!'''
 
-with open("../Text_Files/HW_01_Semordnilap.txt", "r") as file_semordnilap:
-    list_lines = []
-    list_semordnilap = []
-    list_lines = file_semordnilap.readlines()
 
-    for lines in list_lines:
-        if lines.lower().rstrip() == lines.lower().rstrip()[::-1]:
-            list_semordnilap.append(lines.rstrip())
+def semordnilap_recogniser(file_name):
+    with open(f"{file_name}.txt", "r") as file_semordnilap:
 
-with open("../Text_Files/HW_01_result.txt", "w") as file_result:
-    for elements in range(len(list_lines)):
-        file_result.write()
+        list_semordnilap = []
+        list_lines = file_semordnilap.readlines()
+
+        for lines in list_lines:
+            if lines.lower().rstrip() == lines.lower().rstrip()[::-1]:
+                list_semordnilap.append(lines.rstrip())
+    print(list_semordnilap)
+    return list_semordnilap
+
+    with open("../Text_Files/HW_01_result.txt", "w") as file_result:
+
+        for elements in list_semordnilap:
+            file_result.write(f"{elements}\n")
+
+
+semordnilap_recogniser("../Text_Files/HW_01_Semordnilap")
