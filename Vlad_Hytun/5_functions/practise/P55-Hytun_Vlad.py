@@ -5,15 +5,17 @@
 # for the sake of the exercise you should pretend Python
 # did not have this operator.)
 
-#Done, Work, maybe right
+def is_memeber():
+    a = input("Input list of values about SPACE: ").split()
+    x = input("Input x: ")
+    for item in a:
+        if item == x:
+            result = True
+            break
+        else:
+            result = False
+    print(f"Result of your efforts: {result}")
+    return result
 
-numbs = input('Enter something number: ')
-lists = input("Enter lists of values: ").split()
-def counts(numbs, lists):
-    count = lists.count(numbs)
-    if count >= 1:
-        print('Yep u right: ', count)
-    else:
-        print(f'Sorry, but count is {count}:')
+is_memeber()
 
-counts(numbs, lists)

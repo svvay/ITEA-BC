@@ -5,15 +5,18 @@
 
 # All done
 
-firstnumb = int(input('Enter first number: '))
-secnumb = int(input('Enter second number: '))
+# firstnumb = int(input('Enter first number: '))
+# secnumb = int(input('Enter second number: '))
 
 def maxi(firstnumb, secnumb):
     if firstnumb > secnumb:
-        print(f'The biggest is: {firstnumb}')
+        # print(f'The biggest is: {firstnumb}')
+        return firstnumb
     elif secnumb > firstnumb:
-        print(f'The biggest is: {secnumb}')
+        # print(f'The biggest is: {secnumb}')
+        return secnumb
     elif firstnumb == secnumb:
-        print(f'Its awesome {firstnumb} = {secnumb}')
+        # print(f'Its awesome {firstnumb} = {secnumb}')
+        return True
 
-maxi(firstnumb, secnumb)
+# maxi(firstnumb, secnumb)

@@ -3,14 +3,10 @@
 # the len() function built in, but writing it yourself
 # is nevertheless a good exercise.)
 
-# DOne, all good
+def  my_len(str):
+    count_symbol = 0
+    for i in str:
+        count_symbol += 1
+    return count_symbol
 
-string = input('Enter something list or string: ')
-
-def length(string):
-    leng = 0
-    for i in string:
-        leng += 1
-    return leng
-
-print(length(string))
+print(my_len('djfkdflk'))

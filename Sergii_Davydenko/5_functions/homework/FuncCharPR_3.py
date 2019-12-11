@@ -4,15 +4,15 @@
 
 # Done
 
-tryes = (input('enter something string: ')).upper()
+# tryes = (input('enter something string: ')).upper()
 
 
 def func(tryes):
     vowels_string = ['A', 'E', 'I', 'O', 'U', 'Y']
     if tryes in vowels_string:
-        return print(f'{tryes}, True vowel character')
+        return True #print(f'{tryes}, True vowel character')
     else:
-        return print('Sorry, try again later')
+        return False #print('Sorry, try again later')
 
 
-func(tryes)
+# func(tryes)
