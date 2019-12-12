@@ -9,19 +9,19 @@
 
 # Working BAD, Why ??
 
-numbers = []
-while True:
-    number = int(input('Enter something number: '))
-    if number:
-        numbers.append(number)
-    else:
-        break
-print(max(numbers))
+# numbers = []
+# while True:
+#     number = int(input('Enter something number: '))
+#     if number:
+#         numbers.append(number)
+#     else:
+#         break
+# print(max(numbers))
 
 # WOrking norms
 
-numb = map(int, input("Enter : ").split())
-nums = [int(item) for item in numb]
+# numb = map(int, input("Enter : ").split())
+# nums = [int(item) for item in numb]
 
 def maxmin(nums):
   max = 0
@@ -29,4 +29,4 @@ def maxmin(nums):
     if n > max:
       max = n
   return max
-print(maxmin(nums))
+# print(maxmin(nums))

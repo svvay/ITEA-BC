@@ -5,7 +5,7 @@
 
 # DOne, all good
 
-string = input('Enter something list or string: ')
+# string = input('Enter something list or string: ')
 
 def length(string):
     leng = 0
@@ -13,4 +13,4 @@ def length(string):
         leng += 1
     return leng
 
-print(length(string))
+# print(length(string))

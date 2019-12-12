@@ -6,8 +6,8 @@
 
 # Its work
 
-first = input("Enter first lists: ").split()
-second = input("Enter second lists: ").split()
+# first = input("Enter first lists: ").split()
+# second = input("Enter second lists: ").split()
 
 
 def overlapping(first, second):
@@ -17,7 +17,7 @@ def overlapping(first, second):
                 return True
     return False
 
-print(overlapping(first, second))
+# print(overlapping(first, second))
 
 
 # Work for SET
