@@ -11,7 +11,6 @@
     Note however that the rules must be regarded as heuristic, in the
     sense that you must not expect them to work for all cases. Tip: Check
     out the string method endswith().'''
-import pytest
 
 
 def make_3sg_form(word):
