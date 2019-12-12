@@ -189,48 +189,54 @@
 #     return f2()
 # print(f1())
 
-global a
-a = 123
-globals()
-x = 1
-import time
-
-
-
+# global a
+# a = 123
+# globals()
+# x = 1
+# import time
+#
+#
+#
 # def my_decorator(func):
 #     def wrapper():
 #         print("Something is happening before the function is called.")
-#         func()
+#         print(func())
 #         print("Something is happening after the function is called.")
 #     return wrapper
 #
+# sleep = my_decorator(time.sleep())
+#
+# sleep()
+#
 # def say_whee():
 #     return "Whee!"
-#
+# #
 # say_whee = my_decorator(say_whee)
-#
+# #
 # say_whee()
+# pass
 # Something is happening before the function is called.
 # Whee!
 # Something is happening after the function is called.
-# from datetime import datetime
+from datetime import datetime
+
+
+def say_whee():
+    print("Whee!")
+
+def say_tshh():
+    print("Tsshh!")
+
+def not_during_the_night(func):
+    def wrapper():
+        if 7 <= datetime.now().hour < 21:
+            func()
+        else:
+            say_whee()  # Hush, the neighbors are asleep
+    return wrapper
 #
-# def not_during_the_night(func):
-#     def wrapper():
-#         if 7 <= datetime.now().hour < 21:
-#             func()
-#         else:
-#             say_tshh()  # Hush, the neighbors are asleep
-#     return wrapper
-#
-# def say_whee():
-#     print("Whee!")
-#
-# def say_tshh():
-#     print("Tsshh!")
-#
-# say_whee = not_during_the_night(say_whee)
-#
+say_whee = not_during_the_night(say_whee)
+
 # say_whee()
 
 # def make_me_shota(func):

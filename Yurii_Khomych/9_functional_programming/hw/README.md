@@ -34,3 +34,9 @@
 
 3. Create decorator which print the execution time of function.
 Use time or timeit module for it.
+
+`import time`
+
+`start = time.time()`
+
+`end = time.time() - start`
