@@ -9,11 +9,12 @@ def func_name_show(function_to_decorate):
         function_to_decorate()
 
         print(function_to_decorate.__name__)
-    return wraper()
+    return wraper
 
 @func_name_show
 def func_count():
     s = 'zckzlkvjsdlkjvlsdkv'
     print(s)
 
+func_count()
 
