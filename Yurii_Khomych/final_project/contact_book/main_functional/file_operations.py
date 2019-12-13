@@ -1,6 +1,7 @@
 import csv
 
 from main_functional.decorators import get_file_size
+from main_functional.constants import FILES_FOLDER
 
 
 class File:
@@ -9,11 +10,11 @@ class File:
         self.file_extension = file_extension
 
     def read(self):
-        with open(f"../data/{self.file_name}.{self.file_extension}") as f:
+        with open(f"{FILES_FOLDER}{self.file_name}.{self.file_extension}") as f:
             return list(csv.DictReader(f))
 
     def write(self, contact_list):
-        with open(f"../data/{self.file_name}.{self.file_extension}", "w") as f:
+        with open(f"data/{self.file_name}.{self.file_extension}", "w") as f:
             fieldnames = list(contact_list[0].keys())
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()

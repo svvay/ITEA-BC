@@ -1,4 +1,4 @@
-from main_functional.file_operations import File, get_contact_list
+from main_functional.file_operations import get_contact_list
 from main_functional.operate_contact import create_contact
 
 
