@@ -1,0 +1,15 @@
+string = input("Write your thoughts: ")
+digits = []
+letters = []
+other = []
+
+for i in string:
+    if i.isdigit():
+        digits.append(i)
+    elif i.isalpha():
+        letters.append(i)
+    else:
+        other.append(i)
+
+print(f'list of digits: {digits}, \n the length of digits:', len(digits))
+print(f'list of letters: {letters}, \n the length of digits:', len(letters))

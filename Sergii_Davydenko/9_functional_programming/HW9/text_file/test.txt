@@ -1,0 +1,4 @@
+Please help write this in python Thank you
+
+A palindrome is defined as a string that is equal to its reverse. So, for example, the string
+‘racecar’ is a palindrome.
